@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simulador Simples Nacional</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        
+                    <div class="form-header">
+        
+                        <div class="img">
+                            <img width="42%" src="./assets/img/logosimples2.png">
+                        </div>
+        
+                    </div>
+
+        <div class="form">
+
+            <form action="#" method="POST">
+
+                <div class="groups">
+                    <div class="container1">
+
+                        <div class="input-box">
+                            <label for="rbt12"><input type="text" class="rbt12" id="rbt12" placeholder="RBT 12" required autocomplete="off"></label>
+                        </div>
+                        <div class="input-box">
+                            <label for="rba"><input type="text" class="rba" id="rba" placeholder="RBA" required autocomplete="off"></label>
+                        </div>
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <div class="input-box">
+                            <label for="receita"><input type="text" class="receita" id="receita" placeholder="Receita 1" required autocomplete="off"></label>
+                        </div>
+
+                        <div class="input-box">
+                            <select class="anexo-select" id='anexo-select' required>
+                                <option value="" disabled selected>Anexo</option>
+                                <option value="anexo-1">ANEXO I</option>
+                                <option value="anexo-2">ANEXO II</option>
+                                <option value="anexo-3">ANEXO III</option>
+                                <option value="anexo-4">ANEXO IV</option>
+                                <option value="fator-r">FATOR R</option>
+                            </select>
+                        </div>
+
+                        <div class="input-box iss-box">
+                            <label><input type="checkbox" id="iss"> iss retido</label>
+                        </div>
+
+                        <div class="input-box icms-box">
+                            <label><input type="checkbox" id="icms"> icms st</label>
+                        </div>
+
+                        <div class="input-box zero-box">
+                            <label><input type="checkbox" class="zero"> pis e cof zero</label>
+                        </div>
+
+                    </div>
+
+                </div>
+                
+                <div class="button-container">
+                    <div class="button-group">
+                        <div class="add">
+                            <div class="img-button">
+                                <img width="20px" src="./assets/img/add.png">
+                            </div>
+                            <div class="text-button">
+                                <button type="button">Adicionar Receita</button>
+                            </div>
+                        </div>
+        
+                        <div class="delete">
+                            <div class="img-del">
+                                <img width="20px" src="./assets/img/del.png">
+                            </div>
+                            <div class="text-button">
+                                <button type="button">Excluir Receita</button>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="cal">
+        
+                        <div class="img-cal">
+                            <img width="20px" src="./assets/img/cal.png">
+                        </div>
+        
+                        <div class="text-button">
+                            <button class="calcular" type="submit">Calcular</button>
+                        </div>
+        
+                    </div>
+        
+                </div>
+            </form>
+            
+        </div>
+        
+
+        <div class="resultados"></div>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

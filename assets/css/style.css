@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 10px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right bottom,#6d327c,#485DA6,#00a1ba,#01b18e,#32b37b);
+
+}
+
+.groups{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 80%;
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    background:  #00002e;
+    box-shadow: 5px 10px 20px #000804;
+    border-radius: 40px;
+    margin: 3em auto;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-header {
+    padding: 2em 0 0 0;
+    width: 100%;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img {
+    display: flex;
+    padding-bottom: .5rem;
+    justify-content: center;
+}
+
+.container1{
+    width: 80%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.input-group{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+    border: 2px solid #1E90FF;
+    border-radius: 20px;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin: 6px;
+    border: 1px solid #1E90FF;
+}
+
+.input-box label {
+    cursor: pointer;
+}
+
+.input-box input {
+    background: #00001e;
+    padding: 2.5px 10px 2.5px 4px;
+    border: none;
+    color: white;
+    font-weight: normal;
+}
+
+.anexo-select {
+    font-weight: bold;
+    background: #00001e;
+    color: #1E90FF;
+    padding: 3px 3px 3px 4px;
+    border: none;
+    height: 25px;
+    cursor: pointer;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    }
+
+
+
+.iss-box,
+.icms-box,
+.zero-box {
+    background: #1E90FF;
+    padding: 3.5px 5px 3.5px 5px;
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1em;
+}
+
+.cal,
+.add,
+.delete {
+    margin: 10px;
+    background: #1E90FF;
+    /* background: #00ff88; */
+    padding: 6px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+}
+
+
+
+.cal:hover,
+.add:hover,
+.delete:hover,
+.input-box:hover {
+    box-shadow: 0 0 5px 1.25px #1E90FF;
+    transform: scale(1.02);
+}
+
+.add button,
+.cal button,
+.delete button {
+    background: #1E90FF;
+    border: none;
+    padding: 0px 0px 0px 5px;
+    cursor: pointer;
+    align-items: center;
+}
+
+.text-button{
+    display: flex;
+    align-items: center;
+}
+
+.button-group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-button,
+.img-cal,
+.img-del {
+    align-items: center;
+    display: flex;
+    border-radius: none;
+    border: none;
+}
+
+.img-cal img {
+    border-radius: 1px
+}
+
+.input-box, .receita, .rbt12, .rba{
+    width: 100%;
+    text-align: right;
+    font-size: 18px;
+}
+
+
+@media screen and (max-width: 1036px) {
+    .container {
+        width: 100%
+    }
+    .form {
+        width: 100%;
+    }
+    .input-group {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    body {
+        background: linear-gradient(to right bottom,#6d327c,#485DA6,#00a1ba,#01b18e,#32b37b);
+    }
+    .container {
+        width: 100%;
+        box-shadow: none;
+        ;
+    }
+    .form {
+        width: 100%;
+    }
+
+    .input-group, .container {
+        flex-direction: column;
+        /* overflow-y: scroll; */
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        padding: 5px
+    }
+    .input-box{
+        width: 95%;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .input-box label{
+        width: 100%;
+    }
+    
+    .anexo-select {
+        width: 100%
+    }
+    
+    .img {
+        width: 450px;
+    }
+}
